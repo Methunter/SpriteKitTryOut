@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60FE7631A47474A00E97AD6 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D60FE7621A47474A00E97AD6 /* MyScene.sks */; };
 		D6A7C4071A46C39D00709B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A7C4061A46C39D00709B07 /* AppDelegate.swift */; };
 		D6A7C4091A46C39D00709B07 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A7C4081A46C39D00709B07 /* art.scnassets */; };
 		D6A7C40B1A46C39D00709B07 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A7C40A1A46C39D00709B07 /* GameViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60FE7621A47474A00E97AD6 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
 		D6A7C4011A46C39D00709B07 /* SpriteKitTryOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitTryOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A7C4051A46C39D00709B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A7C4061A46C39D00709B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				D6A7C4061A46C39D00709B07 /* AppDelegate.swift */,
 				D6A7C4081A46C39D00709B07 /* art.scnassets */,
 				D6A7C40A1A46C39D00709B07 /* GameViewController.swift */,
+				D60FE7621A47474A00E97AD6 /* MyScene.sks */,
 				D6A7C40C1A46C39D00709B07 /* Main.storyboard */,
 				D6A7C4281A471A3500709B07 /* BreakingBricksViewController.swift */,
 				D6A7C40F1A46C39D00709B07 /* Images.xcassets */,
@@ -200,6 +203,7 @@
 			files = (
 				D6A7C4131A46C39D00709B07 /* LaunchScreen.xib in Resources */,
 				D6A7C4101A46C39D00709B07 /* Images.xcassets in Resources */,
+				D60FE7631A47474A00E97AD6 /* MyScene.sks in Resources */,
 				D6A7C4091A46C39D00709B07 /* art.scnassets in Resources */,
 				D6A7C40E1A46C39D00709B07 /* Main.storyboard in Resources */,
 			);

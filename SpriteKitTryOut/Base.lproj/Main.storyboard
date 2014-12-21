@@ -4,25 +4,25 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Sprite Kit-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="SpriteKitTryOut" customModuleProvider="target" sceneMemberID="viewController">
-                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="" id="3se-qz-xqx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </sceneKitView>
-                    <tabBarItem key="tabBarItem" title="Item" id="lsC-7f-vPR"/>
+                    <tabBarItem key="tabBarItem" title="Sprite Kit" image="ball" id="lsC-7f-vPR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="663"/>
+            <point key="canvasLocation" x="1343" y="1277"/>
         </scene>
-        <!--Item-->
+        <!--Scene Kit-->
         <scene sceneID="Zdr-y2-CcP">
             <objects>
-                <viewController id="wSb-x3-yA1" sceneMemberID="viewController">
+                <viewController id="wSb-x3-yA1" customClass="BreakingBricksViewController" customModule="SpriteKitTryOut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QEM-yv-3NT"/>
                         <viewControllerLayoutGuide type="bottom" id="TIj-FI-sMu"/>
@@ -31,23 +31,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTt-tj-jZ9">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="ship.dae" translatesAutoresizingMaskIntoConstraints="NO" id="yTt-tj-jZ9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="a0m-Wn-xPS"/>
+                    <tabBarItem key="tabBarItem" title="Scene Kit" image="brick" id="a0m-Wn-xPS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bjg-Oa-JpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="1348"/>
+            <point key="canvasLocation" x="1343" y="622"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jdC-2f-DLd">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rR0-Zc-m3E" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="rR0-Zc-m3E" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="pFU-9Q-pjY">
@@ -55,8 +55,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="viewControllers" id="bp1-Aq-SY3"/>
-                        <segue destination="wSb-x3-yA1" kind="relationship" relationship="viewControllers" id="4Iz-61-nvr"/>
+                        <segue destination="wSb-x3-yA1" kind="relationship" relationship="viewControllers" id="K7d-KF-0eD"/>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="viewControllers" id="vnC-aL-RM7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmP-p8-EOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,4 +64,8 @@
             <point key="canvasLocation" x="626" y="943"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball" width="27" height="27"/>
+        <image name="brick" width="60" height="30"/>
+    </resources>
 </document>
